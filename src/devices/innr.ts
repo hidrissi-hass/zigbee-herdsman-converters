@@ -90,8 +90,16 @@ export const definitions: DefinitionWithExtend[] = [
         zigbeeModel: ["RCL 240 T"],
         model: "RCL 240 T",
         vendor: "Innr",
-        description: "Smart round ceiling lamp comfort",
+        description: "Innr Round Ceiling Light 42cm (White & Colour)",
         extend: [m.light({colorTemp: {range: [200, 454]}, turnsOffAtBrightness1: true})],
+        ota: true,
+    },
+    {
+        zigbeeModel: ["RCL 242 C"],
+        model: "Innr Round Ceiling Light 42cm (White & Colour)",
+        vendor: "Innr",
+        description: "Smart round ceiling lamp comfort",
+        extend: [m.light({"colorTemp":{"range":[153,556]},"color":{"modes":["xy","hs"],"enhancedHue":true}})],
         ota: true,
     },
     {
